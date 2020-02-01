@@ -1,3 +1,15 @@
 <resources>
     <string name="app_name">fridge</string>
+    <string name="textview">TextView</string>
+    <string name="hint">hint</string>
+    <string name="wc">Welcome</string>
+    <string name="fridge">FRIDGE</string>
+    <string name="gs">Get Started</string>
+    <string name="title_activity_items">ItemsActivity</string>
+    <string name="action_settings">Settings</string>
+    <string name="v">v</string>
+    <string name="p">p</string>
+    <string name="tab_text_1">Food Item</string>
+    <string name="i">Ingredients</string>
+    <string name="done">Done</string>
 </resources>

@@ -17,6 +17,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme" >
+        <activity android:name="com.example.fridge.ListActivity" />
+        <activity
+            android:name="com.example.fridge.ItemsActivity"
+            android:label="@string/title_activity_items"
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name="com.example.fridge.MainActivity" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -24,6 +29,12 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <provider
+            android:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer"
+            android:authorities="com.example.fridge.lifecycle-process"
+            android:exported="false"
+            android:multiprocess="true" />
     </application>
 
 </manifest>

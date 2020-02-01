@@ -6,41 +6,63 @@
 6
 7    <uses-sdk
 8        android:minSdkVersion="15"
-8-->/Users/reem/Desktop/fridge/app/src/main/AndroidManifest.xml
+8-->C:\Users\Alyza\Documents\elleshacks\fridge\app\src\main\AndroidManifest.xml
 9        android:targetSdkVersion="29" />
-9-->/Users/reem/Desktop/fridge/app/src/main/AndroidManifest.xml
+9-->C:\Users\Alyza\Documents\elleshacks\fridge\app\src\main\AndroidManifest.xml
 10
 11    <application
-11-->/Users/reem/Desktop/fridge/app/src/main/AndroidManifest.xml:5:5-19:19
+11-->C:\Users\Alyza\Documents\elleshacks\fridge\app\src\main\AndroidManifest.xml:5:5-24:19
 12        android:allowBackup="true"
-12-->/Users/reem/Desktop/fridge/app/src/main/AndroidManifest.xml:6:9-35
+12-->C:\Users\Alyza\Documents\elleshacks\fridge\app\src\main\AndroidManifest.xml:6:9-35
 13        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-13-->[androidx.core:core:1.1.0] /Users/reem/.gradle/caches/transforms-2/files-2.1/e9dab9c67c1ee3668e0bbf86c6d8cbd8/core-1.1.0/AndroidManifest.xml:24:18-86
+13-->[androidx.core:core:1.1.0] C:\Users\Alyza\.gradle\caches\transforms-2\files-2.1\e9dab9c67c1ee3668e0bbf86c6d8cbd8\core-1.1.0\AndroidManifest.xml:24:18-86
 14        android:debuggable="true"
 15        android:icon="@mipmap/ic_launcher"
-15-->/Users/reem/Desktop/fridge/app/src/main/AndroidManifest.xml:7:9-43
+15-->C:\Users\Alyza\Documents\elleshacks\fridge\app\src\main\AndroidManifest.xml:7:9-43
 16        android:label="@string/app_name"
-16-->/Users/reem/Desktop/fridge/app/src/main/AndroidManifest.xml:8:9-41
+16-->C:\Users\Alyza\Documents\elleshacks\fridge\app\src\main\AndroidManifest.xml:8:9-41
 17        android:roundIcon="@mipmap/ic_launcher_round"
-17-->/Users/reem/Desktop/fridge/app/src/main/AndroidManifest.xml:9:9-54
+17-->C:\Users\Alyza\Documents\elleshacks\fridge\app\src\main\AndroidManifest.xml:9:9-54
 18        android:supportsRtl="true"
-18-->/Users/reem/Desktop/fridge/app/src/main/AndroidManifest.xml:10:9-35
+18-->C:\Users\Alyza\Documents\elleshacks\fridge\app\src\main\AndroidManifest.xml:10:9-35
 19        android:theme="@style/AppTheme" >
-19-->/Users/reem/Desktop/fridge/app/src/main/AndroidManifest.xml:11:9-40
-20        <activity android:name="com.example.fridge.MainActivity" >
-20-->/Users/reem/Desktop/fridge/app/src/main/AndroidManifest.xml:12:9-18:20
-20-->/Users/reem/Desktop/fridge/app/src/main/AndroidManifest.xml:12:19-47
-21            <intent-filter>
-21-->/Users/reem/Desktop/fridge/app/src/main/AndroidManifest.xml:13:13-17:29
-22                <action android:name="android.intent.action.MAIN" />
-22-->/Users/reem/Desktop/fridge/app/src/main/AndroidManifest.xml:14:17-69
-22-->/Users/reem/Desktop/fridge/app/src/main/AndroidManifest.xml:14:25-66
-23
-24                <category android:name="android.intent.category.LAUNCHER" />
-24-->/Users/reem/Desktop/fridge/app/src/main/AndroidManifest.xml:16:17-77
-24-->/Users/reem/Desktop/fridge/app/src/main/AndroidManifest.xml:16:27-74
-25            </intent-filter>
-26        </activity>
-27    </application>
+19-->C:\Users\Alyza\Documents\elleshacks\fridge\app\src\main\AndroidManifest.xml:11:9-40
+20        <activity android:name="com.example.fridge.ListActivity" />
+20-->C:\Users\Alyza\Documents\elleshacks\fridge\app\src\main\AndroidManifest.xml:12:9-59
+20-->C:\Users\Alyza\Documents\elleshacks\fridge\app\src\main\AndroidManifest.xml:12:19-47
+21        <activity
+21-->C:\Users\Alyza\Documents\elleshacks\fridge\app\src\main\AndroidManifest.xml:13:9-16:59
+22            android:name="com.example.fridge.ItemsActivity"
+22-->C:\Users\Alyza\Documents\elleshacks\fridge\app\src\main\AndroidManifest.xml:14:13-42
+23            android:label="@string/title_activity_items"
+23-->C:\Users\Alyza\Documents\elleshacks\fridge\app\src\main\AndroidManifest.xml:15:13-57
+24            android:theme="@style/AppTheme.NoActionBar" />
+24-->C:\Users\Alyza\Documents\elleshacks\fridge\app\src\main\AndroidManifest.xml:16:13-56
+25        <activity android:name="com.example.fridge.MainActivity" >
+25-->C:\Users\Alyza\Documents\elleshacks\fridge\app\src\main\AndroidManifest.xml:17:9-23:20
+25-->C:\Users\Alyza\Documents\elleshacks\fridge\app\src\main\AndroidManifest.xml:17:19-47
+26            <intent-filter>
+26-->C:\Users\Alyza\Documents\elleshacks\fridge\app\src\main\AndroidManifest.xml:18:13-22:29
+27                <action android:name="android.intent.action.MAIN" />
+27-->C:\Users\Alyza\Documents\elleshacks\fridge\app\src\main\AndroidManifest.xml:19:17-69
+27-->C:\Users\Alyza\Documents\elleshacks\fridge\app\src\main\AndroidManifest.xml:19:25-66
 28
-29</manifest>
+29                <category android:name="android.intent.category.LAUNCHER" />
+29-->C:\Users\Alyza\Documents\elleshacks\fridge\app\src\main\AndroidManifest.xml:21:17-77
+29-->C:\Users\Alyza\Documents\elleshacks\fridge\app\src\main\AndroidManifest.xml:21:27-74
+30            </intent-filter>
+31        </activity>
+32
+33        <provider
+33-->[androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\Alyza\.gradle\caches\transforms-2\files-2.1\58629c19fa6c616abd60edc0d2bb07b8\lifecycle-process-2.2.0\AndroidManifest.xml:25:9-29:43
+34            android:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer"
+34-->[androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\Alyza\.gradle\caches\transforms-2\files-2.1\58629c19fa6c616abd60edc0d2bb07b8\lifecycle-process-2.2.0\AndroidManifest.xml:26:13-79
+35            android:authorities="com.example.fridge.lifecycle-process"
+35-->[androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\Alyza\.gradle\caches\transforms-2\files-2.1\58629c19fa6c616abd60edc0d2bb07b8\lifecycle-process-2.2.0\AndroidManifest.xml:27:13-69
+36            android:exported="false"
+36-->[androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\Alyza\.gradle\caches\transforms-2\files-2.1\58629c19fa6c616abd60edc0d2bb07b8\lifecycle-process-2.2.0\AndroidManifest.xml:28:13-37
+37            android:multiprocess="true" />
+37-->[androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\Alyza\.gradle\caches\transforms-2\files-2.1\58629c19fa6c616abd60edc0d2bb07b8\lifecycle-process-2.2.0\AndroidManifest.xml:29:13-40
+38    </application>
+39
+40</manifest>
