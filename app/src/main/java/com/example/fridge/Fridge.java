@@ -7,6 +7,7 @@ import java.io.*;
 public class Fridge {
     ArrayList<Ingredients> inventory;
     ArrayList<Recipes> myRecipes;
+    ListActivity listActivity;
 
     public Fridge(){
         this.inventory = new ArrayList<>();

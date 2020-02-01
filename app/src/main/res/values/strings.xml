@@ -12,4 +12,14 @@
     <string name="tab_text_1">Food Item</string>
     <string name="i">Ingredients</string>
     <string name="done">Done</string>
+    <string name="expired_in">Expired in...</string>
+    <string name="ingredient_name">Ingredient name</string>
+    <string-array name="food">
+        <item>Food Group</item>
+        <item>Vegetable</item>
+        <item>Protein</item>
+        <item>Grain</item>
+        <item>Fruit</item>
+        <item>Dairy</item>
+    </string-array>
 </resources>
