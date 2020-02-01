@@ -56,7 +56,7 @@ public class Fridge {
         return out;
     }
 
-    ArrayList<Ingredients> findRecipe(){
+    ArrayList<Ingredients> findListOfIngrediantsBalanced(){
         ArrayList<Ingredients> out = new ArrayList<Ingredients>();
         int[] balance = new int[5];
         for (int i = 0 ; i < inventory.size(); i++){
@@ -85,10 +85,47 @@ public class Fridge {
         return out;
     }
 
-    ArrayList<Ingredients> findLeastWastefulRec(){
+    ArrayList<Ingredients> findLeastWastefulIngrediants(){
         ArrayList<Ingredients> out = new ArrayList<Ingredients>();
         for (int i = 0 ; i < 5; i++){
             out.add(inventory.get(i));
+        }
+
+        return out;
+    }
+
+    void clearFridge(int day, int month){
+        for (Ingredients temp : inventory) {
+            if (temp.day > day && temp.month > month){
+                inventory.remove(temp);
+            }
+
+        }
+    }
+
+    ArrayList<Recipes> findRecipeOptimial(){
+        ArrayList<Ingredients> ing = findListOfIngrediantsBalanced();
+        ArrayList<Recipes> out = new ArrayList<>();
+
+        for (Recipes temp : myRecipes) {
+            if (temp.ingredients.containsAll(ing)){
+                out.add(temp);
+            }
+
+        }
+
+        return out;
+    }
+
+    ArrayList<Recipes> findRecipeLeastWasteful(){
+        ArrayList<Ingredients> ing = findLeastWastefulIngrediants();
+        ArrayList<Recipes> out = new ArrayList<>();
+
+        for (Recipes temp : myRecipes) {
+            if (temp.ingredients.containsAll(ing)){
+                out.add(temp);
+            }
+
         }
 
         return out;

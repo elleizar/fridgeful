@@ -3,6 +3,7 @@ package com.example.fridge;
 public class Ingredients {
     String name;
     String foodGroup;
+    int count;
     int day;
     int month;
 
@@ -11,6 +12,13 @@ public class Ingredients {
         this.name = name;
         this.day = day;
         this.month = month;
+    }
+
+    public Ingredients(String name, int day, int month, int count){
+        this.name = name;
+        this.day = day;
+        this.month = month;
+        this.count = count;
     }
 
     public Ingredients(String name, String foodGroup, int day, int month){
