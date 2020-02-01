@@ -6,12 +6,7 @@ class IngredientsComparator implements Comparator{
         Ingredients ing1=(Ingredients) o1;
         Ingredients ing2=(Ingredients)o2;
 
-        if(ing1.month == ing2.month)
-            if(ing1.day > ing2.day)
-                return 1;
-            else
-                return -1;
-        else if(ing1.month > ing2.month)
+        if(ing1.daysToExpire > ing2.daysToExpire)
              return 1;
         else
              return -1;

@@ -18,13 +18,13 @@ public class Fridge {
         this.myRecipes = recipes;
     }
 
-    void addIngredient(String name, String foodGroup, int day, int month){
-        inventory.add(new Ingredients(name, foodGroup, day, month));
+    void addIngredient(String name, String foodGroup, int daysToExpire){
+        inventory.add(new Ingredients(name, foodGroup, daysToExpire));
         Collections.sort(inventory,new IngredientsComparator());
     }
 
-    void addIngredient(String name,  int day, int month){
-        inventory.add(new Ingredients(name, day, month));
+    void addIngredient(String name,  int daysToExpire){
+        inventory.add(new Ingredients(name, daysToExpire));
         Collections.sort(inventory,new IngredientsComparator());
     }
 
@@ -94,9 +94,9 @@ public class Fridge {
         return out;
     }
 
-    void clearFridge(int day, int month){
+    void clearFridge(int days){
         for (Ingredients temp : inventory) {
-            if (temp.day > day && temp.month > month){
+            if (temp.daysToExpire < days){
                 inventory.remove(temp);
             }
 
