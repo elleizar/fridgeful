@@ -8,6 +8,11 @@ public class Fridge {
     ArrayList<Ingredients> inventory;
     ArrayList<Recipes> myRecipes;
 
+    public Fridge(){
+        this.inventory = new ArrayList<>();
+        this.myRecipes = new ArrayList<>();
+    }
+
     public Fridge(ArrayList inventory, ArrayList recipes){
         this.inventory = inventory;
         this.myRecipes = recipes;
@@ -51,13 +56,43 @@ public class Fridge {
         return out;
     }
 
-//    Recipes findRecipe(){
-//        int mostBalanced;
-//        Recipes mostBalancedRecipe;
-//
-//        for (int i = 0 ; i < inventory.size(); i++){
-//
-//
-//        }
-//    }
+    ArrayList<Ingredients> findRecipe(){
+        ArrayList<Ingredients> out = new ArrayList<Ingredients>();
+        int[] balance = new int[5];
+        for (int i = 0 ; i < inventory.size(); i++){
+            if (inventory.get(i).foodGroup.equals("Dairy") && balance[0] == 0 ){
+                out.add(inventory.get(i));
+                balance[0]++;
+            }
+            else if (inventory.get(i).foodGroup.equals("Vegetable") && balance[1] == 0 ){
+                out.add(inventory.get(i));
+                balance[1]++;
+            }
+            else if (inventory.get(i).foodGroup.equals("Fruit") && balance[2] == 0 ){
+                out.add(inventory.get(i));
+                balance[2]++;
+            }
+            else if (inventory.get(i).foodGroup.equals("Protein") && balance[3] == 0 ){
+                out.add(inventory.get(i));
+                balance[3]++;
+            }
+            else if (inventory.get(i).foodGroup.equals("Grains") && balance[4] == 0 ){
+                out.add(inventory.get(i));
+                balance[4]++;
+            }
+        }
+
+        return out;
+    }
+
+    ArrayList<Ingredients> findLeastWastefulRec(){
+        ArrayList<Ingredients> out = new ArrayList<Ingredients>();
+        for (int i = 0 ; i < 5; i++){
+            out.add(inventory.get(i));
+        }
+
+        return out;
+    }
+
+
 }
