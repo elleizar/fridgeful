@@ -3,25 +3,29 @@ package com.example.fridge;
 public class Ingredients {
     String name;
     String foodGroup;
-    int day;
-    int month;
+    int count;
+    int daysToExpire;
 
 
-    public Ingredients(String name, int day, int month){
+    public Ingredients(String name, int daysToExpire){
         this.name = name;
-        this.day = day;
-        this.month = month;
+        this.daysToExpire = daysToExpire;
     }
 
-    public Ingredients(String name, String foodGroup, int day, int month){
+    public Ingredients(String name, int daysToExpire, int count){
+        this.name = name;
+        this.daysToExpire = daysToExpire;
+        this.count = count;
+    }
+
+    public Ingredients(String name, String foodGroup, int daysToExpire){
         this.name = name;
         this.foodGroup = foodGroup;
-        this.day = day;
-        this.month = month;
+        this.daysToExpire = daysToExpire;
     }
 
     String getExpiryDate(){
-        return name + " it exprires on " + day + "/" + month;
+        return name + " it exprires in " + daysToExpire;
     }
 
     String getFoodGroup(){

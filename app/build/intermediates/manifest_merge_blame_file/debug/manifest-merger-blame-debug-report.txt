@@ -24,6 +24,7 @@
 17        android:roundIcon="@mipmap/ic_launcher_round"
 17-->C:\Users\Alyza\Documents\elleshacks\fridge\app\src\main\AndroidManifest.xml:9:9-54
 18        android:supportsRtl="true"
+<<<<<<< HEAD
 18-->C:\Users\Alyza\Documents\elleshacks\fridge\app\src\main\AndroidManifest.xml:10:9-35
 19        android:theme="@style/AppTheme" >
 19-->C:\Users\Alyza\Documents\elleshacks\fridge\app\src\main\AndroidManifest.xml:11:9-40
@@ -66,3 +67,26 @@
 38    </application>
 39
 40</manifest>
+=======
+18-->/Users/reem/Desktop/fridge/app/src/main/AndroidManifest.xml:10:9-35
+19        android:testOnly="true"
+20        android:theme="@style/AppTheme" >
+20-->/Users/reem/Desktop/fridge/app/src/main/AndroidManifest.xml:11:9-40
+21        <activity android:name="com.example.fridge.MainActivity" >
+21-->/Users/reem/Desktop/fridge/app/src/main/AndroidManifest.xml:12:9-18:20
+21-->/Users/reem/Desktop/fridge/app/src/main/AndroidManifest.xml:12:19-47
+22            <intent-filter>
+22-->/Users/reem/Desktop/fridge/app/src/main/AndroidManifest.xml:13:13-17:29
+23                <action android:name="android.intent.action.MAIN" />
+23-->/Users/reem/Desktop/fridge/app/src/main/AndroidManifest.xml:14:17-69
+23-->/Users/reem/Desktop/fridge/app/src/main/AndroidManifest.xml:14:25-66
+24
+25                <category android:name="android.intent.category.LAUNCHER" />
+25-->/Users/reem/Desktop/fridge/app/src/main/AndroidManifest.xml:16:17-77
+25-->/Users/reem/Desktop/fridge/app/src/main/AndroidManifest.xml:16:27-74
+26            </intent-filter>
+27        </activity>
+28    </application>
+29
+30</manifest>
+>>>>>>> 9c56e127b141d96a5068818f5bc3ddde2e0fa11f
