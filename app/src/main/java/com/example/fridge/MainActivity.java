@@ -4,9 +4,15 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+<<<<<<< HEAD
 import android.view.View;
 import android.widget.Button;
 import android.util.Log;
+=======
+import android.util.Log;
+
+import java.util.ArrayList;
+>>>>>>> 9c56e127b141d96a5068818f5bc3ddde2e0fa11f
 
 import java.util.ArrayList;
 
