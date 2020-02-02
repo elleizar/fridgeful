@@ -31,4 +31,6 @@
     <string name="start">START</string>
     <string name="password">Password</string>
     <string name="todo">TODO</string>
+    <string name="r22">Balanced - includes all food groups. Misses an Ingredient that will Expires in 5 Day</string>
+    <string name="r11">Covers 4 Food Groups - Missing Dairy. Uses All the Ingredients that Expires in 1 Days from Today</string>
 </resources>

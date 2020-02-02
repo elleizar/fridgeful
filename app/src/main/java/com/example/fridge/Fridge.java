@@ -11,6 +11,12 @@ public class Fridge{
     public Fridge(){
         this.inventory = new ArrayList<>();
         this.myRecipes = new ArrayList<>();
+        inventory.add(new Ingredients("1Kg Chicken", "Protein", 2));
+        inventory.add(new Ingredients("3 Green Peppers", "Vegtable", 1));
+        inventory.add(new Ingredients("Noodles", "Grains", 6));
+        inventory.add(new Ingredients("1L Milk", "Diaey", 4));
+
+
     }
 
     public Fridge(ArrayList inventory, ArrayList recipes){
@@ -43,7 +49,7 @@ public class Fridge{
     String listInventory(){
         String out = "";
         for (Ingredients temp : inventory) {
-            out = out + temp.name + "\n" ;
+            out = out + temp.name + "- Expires in " + temp.daysToExpire + " Days" +  "\n" ;
         }
         return out;
     }
