@@ -4,24 +4,27 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".RecListActivity">
+    tools:context=".RecListActivity"
+    android:background="#FBF3B3">
 
     <Button
         android:id="@+id/rec1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="88dp"
-        android:layout_marginLeft="88dp"
+        android:layout_width="247dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="83dp"
+        android:layout_marginLeft="83dp"
         android:layout_marginTop="130dp"
-        android:layout_marginEnd="235dp"
-        android:layout_marginRight="235dp"
+        android:layout_marginEnd="82dp"
+        android:layout_marginRight="82dp"
         android:layout_marginBottom="553dp"
+        android:background="@drawable/button_background"
         android:onClick="onClick"
-        android:text="Button"
+        android:text="@string/popular_recipe"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/back"

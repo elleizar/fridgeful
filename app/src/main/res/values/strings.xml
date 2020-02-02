@@ -12,6 +12,7 @@
     <string name="done">Done</string>
     <string name="expired_in">Expired in...</string>
     <string name="ingredient_name">Ingredient name</string>
+    <string name="popular_recipe">Popular Recipe</string>
     <string-array name="food">
         <item>Food Group</item>
         <item>Vegetable</item>
