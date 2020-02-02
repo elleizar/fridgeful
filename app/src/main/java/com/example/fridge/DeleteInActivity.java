@@ -26,7 +26,12 @@ public class DeleteInActivity extends AppCompatActivity {
     public void onClick(View v) {
         String name = getInputOfTextField(R.id.name);
 
-        MainActivity.f1.removeIngredient(name);
+        try {
+            MainActivity.f1.removeIngredient(name);
+        }
+        catch (Exception e){
+            System.out.println(e);
+        }
 
         switch (v.getId()) {
             case R.id.done: {

@@ -22,7 +22,7 @@ public class RecListActivity extends AppCompatActivity {
                 break;
             }
             case R.id.back: {
-                Intent intent = new Intent(this, RecListActivity.class);
+                Intent intent = new Intent(this, ListActivity.class);
                 startActivity(intent);
                 break;
             }
