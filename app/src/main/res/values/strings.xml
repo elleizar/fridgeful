@@ -21,4 +21,14 @@
         <item>Fruit</item>
         <item>Dairy</item>
     </string-array>
+    <string name="recipes">\t\t\tRecipes</string>
+    <string name="pop">Most Popular</string>
+    <string name="r1">Chicken Noodle Soup</string>
+    <string name="r2">Braised Chicken with Carrots</string>
+    <string name="r3">Roasted Carrots</string>
+    <string name="r4">Roasted Potatoes and Carrots</string>
+    <string name="name">Name</string>
+    <string name="start">START</string>
+    <string name="password">Password</string>
+    <string name="todo">TODO</string>
 </resources>

@@ -4,27 +4,98 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".RecListActivity"
-    android:background="#FBF3B3">
+    tools:context=".RecListActivity">
 
-    <Button
-        android:id="@+id/rec1"
-        android:layout_width="247dp"
-        android:layout_height="49dp"
-        android:layout_marginStart="83dp"
-        android:layout_marginLeft="83dp"
-        android:layout_marginTop="130dp"
-        android:layout_marginEnd="82dp"
-        android:layout_marginRight="82dp"
-        android:layout_marginBottom="553dp"
-        android:background="@drawable/button_background"
-        android:onClick="onClick"
-        android:text="@string/popular_recipe"
-        app:layout_constraintBottom_toBottomOf="parent"
+    <TextView
+        android:id="@+id/recipes"
+        android:layout_width="409dp"
+        android:layout_height="67dp"
+        android:layout_marginBottom="16dp"
+        android:background="#7DAD50"
+        android:gravity="bottom"
+        android:paddingHorizontal="7dp"
+        android:paddingVertical="8dp"
+        android:text="@string/recipes"
+        android:textColor="@android:color/white"
+        android:textSize="30sp"
+        app:fontFamily="@font/corben_bold"
+        app:layout_constraintBottom_toTopOf="@+id/pop"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/pop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="10dp"
+        android:text="@string/pop"
+        app:fontFamily="@font/corben_bold"
+        app:layout_constraintBottom_toTopOf="@+id/recipe1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/recipes" />
+
+    <Button
+        android:id="@+id/recipe1"
+        android:layout_width="360dp"
+        android:layout_height="167dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="26dp"
+        android:layout_marginRight="26dp"
+        android:background="@drawable/soup"
+        android:gravity="start|bottom"
+        android:onClick="onClick"
+        android:text="@string/r1"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/recipe2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pop" />
+
+    <Button
+        android:id="@+id/recipe2"
+        android:layout_width="360dp"
+        android:layout_height="167dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="26dp"
+        android:layout_marginRight="26dp"
+        android:background="@drawable/braisedchicken"
+        android:gravity="start|bottom"
+        android:text="@string/r2"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/recipe3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/recipe1" />
+
+    <Button
+        android:id="@+id/recipe3"
+        android:layout_width="360dp"
+        android:layout_height="167dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="26dp"
+        android:layout_marginRight="26dp"
+        android:background="@drawable/carrot"
+        android:gravity="start|bottom"
+        android:text="@string/r3"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/recipe2" />
+
+
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/back"

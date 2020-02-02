@@ -16,7 +16,7 @@ public class RecListActivity extends AppCompatActivity {
 
     public void onClick(View v) {
         switch (v.getId()) {
-            case R.id.rec1: {
+            case R.id.recipe1: {
                 Intent intent = new Intent(this, RecipeActivity.class);
                 startActivity(intent);
                 break;
