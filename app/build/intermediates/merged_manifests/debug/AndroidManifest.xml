@@ -18,6 +18,9 @@
         android:supportsRtl="true"
         android:testOnly="true"
         android:theme="@style/AppTheme" >
+        <activity android:name="com.example.fridge.DeleteInActivity" />
+        <activity android:name="com.example.fridge.RecListActivity" />
+        <activity android:name="com.example.fridge.RecipeActivity" />
         <activity android:name="com.example.fridge.IngredientActivity" />
         <activity android:name="com.example.fridge.ListActivity" />
         <activity
@@ -31,6 +34,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
 
         <provider
             android:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer"

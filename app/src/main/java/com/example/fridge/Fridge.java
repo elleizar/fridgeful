@@ -43,7 +43,7 @@ public class Fridge{
     String listInventory(){
         String out = "";
         for (Ingredients temp : inventory) {
-            out = out + temp.name ;
+            out = out + temp.name + "\n" ;
         }
         return out;
     }

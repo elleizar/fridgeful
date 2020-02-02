@@ -1,6 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+<<<<<<< Updated upstream
     <color name="colorPrimary">#008577</color>
     <color name="colorPrimaryDark">#00574B</color>
     <color name="colorAccent">#D81B60</color>
 </resources>
+=======
+    <color name="colorPrimary">#ACDC6C</color>
+    <color name="colorPrimaryDark">#7DAD50</color>
+    <color name="colorAccent">@android:color/black</color>
+</resources>
+>>>>>>> Stashed changes
