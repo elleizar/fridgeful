@@ -25,14 +25,16 @@ public class IngredientActivity extends AppCompatActivity {
         exp = (EditText) findViewById(R.id.exp);
         food = (Spinner) findViewById(R.id.food);
 //        fridge = new Fridge();
-//        fridge.addIngredient(name.toString(), food.toString(), Integer.parseInt(exp.toString()));
+//        MainActivity.f1.addIngredient(name.toString(), food.toString(), Integer.parseInt(exp.toString()));
+          MainActivity.f1.addIngredient(name.toString(), "B", 3);
+
     }
 
     public void onClick(View v) {
         switch (v.getId()) {
             case R.id.done: {
                 Intent intent = new Intent(this, ListActivity.class);
-                intent.putExtra("name", name.toString());
+//                intent.putExtra("name", name.toString());
                 startActivity(intent);
             }
         }

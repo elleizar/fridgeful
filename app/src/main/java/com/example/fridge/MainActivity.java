@@ -1,25 +1,16 @@
-    package com.example.fridge;
+package com.example.fridge;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
-<<<<<<< HEAD
 import android.view.View;
 import android.widget.Button;
-import android.util.Log;
-=======
-import android.util.Log;
 
-import java.util.ArrayList;
->>>>>>> 9c56e127b141d96a5068818f5bc3ddde2e0fa11f
-
-import java.util.ArrayList;
-
-    public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity {
 
     public Button start_button;
-
+    static Fridge f1 = new Fridge();
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -35,4 +26,11 @@ import java.util.ArrayList;
         Intent intent = new Intent(this, ListActivity.class);
         startActivity(intent);
     }
+
+    Fridge getFridge(){
+        return f1;
+    }
+
+
 }
+

@@ -4,13 +4,9 @@ import java.util.ArrayList;
 import java.util.*;
 import java.io.*;
 
-public class Fridge {
+public class Fridge{
     ArrayList<Ingredients> inventory;
     ArrayList<Recipes> myRecipes;
-<<<<<<< HEAD
-    ListActivity listActivity;
-=======
->>>>>>> 9c56e127b141d96a5068818f5bc3ddde2e0fa11f
 
     public Fridge(){
         this.inventory = new ArrayList<>();
@@ -47,7 +43,7 @@ public class Fridge {
     String listInventory(){
         String out = "";
         for (Ingredients temp : inventory) {
-            out +=  temp.name + "\n";
+            out = out + temp.name ;
         }
         return out;
     }
@@ -55,7 +51,7 @@ public class Fridge {
     String listRecipes(){
         String out = "";
         for (Recipes temp : myRecipes) {
-            out +=  temp.name + "\n";
+            out = out +  temp.name ;
         }
         return out;
     }

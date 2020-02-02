@@ -14,7 +14,7 @@ import java.util.ArrayList;
 
 public class ListActivity extends AppCompatActivity {
 
-    Fridge fridge = new Fridge();
+    static Fridge f1 = new Fridge();
     ListView listView;
 //    ArrayList<Ingredients> arrayList;
     ArrayList<String> arrayList;
@@ -24,13 +24,25 @@ public class ListActivity extends AppCompatActivity {
     TextView str;
     String ing;
 
+    public void setContentsOfTextView(int id, String newContents){
+        View view = findViewById(id);
+        TextView textview = (TextView) view;
+        textview.setText(newContents);
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_list);
-        str = (TextView) findViewById(R.id.listView);
-        str.append("Bob");
+//        str = (TextView) findViewById(R.id.textView4);
+//        str.append("Bob");
+
+                if(MainActivity.f1.inventory.size() ==1){
+//                    str.append(MainActivity.f1.inventory.get(0).name);
+
+                }
+
+
 
     }
 
