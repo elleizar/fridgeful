@@ -37,6 +37,12 @@ public class DeleteInActivity extends AppCompatActivity {
             case R.id.done: {
                 Intent intent = new Intent(this, ListActivity.class);
                 startActivity(intent);
+                break;
+            }
+            case R.id.back: {
+                Intent intent = new Intent(this, ListActivity.class);
+                startActivity(intent);
+                break;
             }
         }
     }

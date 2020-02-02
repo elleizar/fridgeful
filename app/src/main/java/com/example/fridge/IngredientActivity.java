@@ -29,8 +29,6 @@ public class IngredientActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_ingredient);
-
-
     }
 
     public void onClick(View v) {
@@ -41,12 +39,23 @@ public class IngredientActivity extends AppCompatActivity {
 
         String foodGroup = getItemSelected(R.id.food);
 
-        MainActivity.f1.addIngredient(name, foodGroup, (int)exp);
+        try {
+            MainActivity.f1.addIngredient(name, foodGroup, (int)exp);
+        }
+        catch (Exception e){
+            System.out.println(e);
+        }
 
         switch (v.getId()) {
             case R.id.done: {
                 Intent intent = new Intent(this, ListActivity.class);
                 startActivity(intent);
+                break;
+            }
+            case R.id.back: {
+                Intent intent = new Intent(this, ListActivity.class);
+                startActivity(intent);
+                break;
             }
         }
     }
