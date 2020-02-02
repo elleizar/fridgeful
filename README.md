@@ -13,9 +13,9 @@ Fridgeful is an Android mobile application that we designed and built using Andr
 Due to time constraints, we had difficulties connecting our mobile app to the same Google Sheet as the Voiceflow application. In the future, we would like to fully connect both the Android application and the Google Assistant application to Google Sheets, so that the user can maintain their fridge from either platform for practicality and easy, remote access. We would like to add the ability to scan expiration dates to make the process even easier for users, which could potentially be done using the Google Vision API.
 
 
-![alt-text](https://he-s3.s3.amazonaws.com/media/sprint/ellehacks-2020/team/783012/1f58921screenshot_1580656428.png) 
-![alt-text](https://he-s3.s3.amazonaws.com/media/sprint/ellehacks-2020/team/783012/585c874screenshot_1580656606.png)
-![alt-text](https://he-s3.s3.amazonaws.com/media/sprint/ellehacks-2020/team/783012/682eda2screenshot_1580656612.png)
+![alt-text](https://he-s3.s3.amazonaws.com/media/sprint/ellehacks-2020/team/783012/1f58921screenshot_1580656428.png =250x)
+![alt-text](https://he-s3.s3.amazonaws.com/media/sprint/ellehacks-2020/team/783012/585c874screenshot_1580656606.png =250x)
+![alt-text](https://he-s3.s3.amazonaws.com/media/sprint/ellehacks-2020/team/783012/682eda2screenshot_1580656612.png =250x)
 
 
 *fridgeful - having a stomach full of food from your fridge
