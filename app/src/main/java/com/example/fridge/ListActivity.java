@@ -15,14 +15,13 @@ import java.util.ArrayList;
 public class ListActivity extends AppCompatActivity {
 
     static Fridge f1 = new Fridge();
-    ListView listView;
-//    ArrayList<Ingredients> arrayList;
-    ArrayList<String> arrayList;
-    ArrayAdapter arrayAdapter;
-    IngredientActivity ingredientActivity = new IngredientActivity();
-
-    TextView str;
-    String ing;
+    @Override
+    protected void onCreate(Bundle savedInstanceState)
+    {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_list);
+        set();
+    }
 
     public void setContentsOfTextView(int id, String newContents){
         View view = findViewById(id);
@@ -30,21 +29,7 @@ public class ListActivity extends AppCompatActivity {
         textview.setText(newContents);
     }
 
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_list);
-//        str = (TextView) findViewById(R.id.textView4);
-//        str.append("Bob");
 
-                if(MainActivity.f1.inventory.size() ==1){
-//                    str.append(MainActivity.f1.inventory.get(0).name);
-
-                }
-
-
-
-    }
 
     public void onClick(View v) {
         switch (v.getId()) {
@@ -54,6 +39,11 @@ public class ListActivity extends AppCompatActivity {
             }
         }
 //        str.append(getIntent().getExtras().getString("name"));
+
+    }
+
+    public void set(){
+            setContentsOfTextView(R.id.textView3, MainActivity.f1.listInventory());
 
     }
 

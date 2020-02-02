@@ -12,29 +12,40 @@ import java.util.ArrayList;
 
 public class IngredientActivity extends AppCompatActivity {
 
-    EditText name;
-    EditText exp;
-    Spinner food;
-    Fridge fridge = new Fridge();
+    private String getInputOfTextField(int id){
+        View view = findViewById(id);
+        EditText editText = (EditText) view;
+        String input = editText.getText().toString();
+        return input;
+    }
 
+    private String getItemSelected(int id) {
+        View view = findViewById(id);
+        Spinner spinner = (Spinner) view;
+        String string = spinner.getSelectedItem().toString();
+        return string;
+    }
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_ingredient);
-        name = (EditText) findViewById(R.id.name);
-        exp = (EditText) findViewById(R.id.exp);
-        food = (Spinner) findViewById(R.id.food);
-//        fridge = new Fridge();
-//        MainActivity.f1.addIngredient(name.toString(), food.toString(), Integer.parseInt(exp.toString()));
-          MainActivity.f1.addIngredient(name.toString(), "B", 3);
+
 
     }
 
     public void onClick(View v) {
+        String name = getInputOfTextField(R.id.name);
+        String textexp = getInputOfTextField(R.id.exp);
+
+        double exp = Double.parseDouble(textexp);
+
+        String foodGroup = getItemSelected(R.id.food);
+
+        MainActivity.f1.addIngredient(name, foodGroup, (int)exp);
+
         switch (v.getId()) {
             case R.id.done: {
                 Intent intent = new Intent(this, ListActivity.class);
-//                intent.putExtra("name", name.toString());
                 startActivity(intent);
             }
         }
