@@ -7,9 +7,7 @@
     <string name="gs">Get Started</string>
     <string name="title_activity_items">ItemsActivity</string>
     <string name="action_settings">Settings</string>
-    <string name="v">v</string>
-    <string name="p">p</string>
-    <string name="tab_text_1">Food Item</string>
+    <string name="gr">Get Recipes</string>
     <string name="i">Ingredients</string>
     <string name="done">Done</string>
     <string name="expired_in">Expired in...</string>

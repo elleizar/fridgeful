@@ -51,8 +51,8 @@
 
     <Button
         android:id="@+id/gs"
-        android:layout_width="175dp"
-        android:layout_height="41dp"
+        android:layout_width="203dp"
+        android:layout_height="50dp"
         android:layout_marginStart="118dp"
         android:layout_marginLeft="118dp"
         android:layout_marginTop="28dp"
